@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="menubtn"><div class="drop">
+            <img src="#" class="iiw_icon" align="left" alt="menu">
+            <div class="menu-content">
+            <h4>Menu</h4><hr>
+            <a href="Shimla.html">Shimla</a>
+            <a href="Goa.html">Goa</a>
+            <a href="#">Offers</a>
+            <a href="Book.html">Book</a>
+            <a href="About.html">About</a>
+            </div>
+        </div>  </button>
+        <a class="brand" href="index.html">The Tour Portal</a>
+        <div><button class="bookbtn" type="button"><a href="About.html">About Us</a></button>
+            <button class="bookbtn" type="button"><a href="Contact.html">Contact Us</a></button>
+    
+            <button class="bookbtn" type="button"><a href="Book.html"> BOOK A STAY</a></button></div>
+         </header>
+    <h1>Great! You have decided to book your tour/trip:</h1>
+    <h2>Please fill the form to successfully confirm your seat</h2>
+    <br><br><hr>
+    <form align="Center">
+            <!-- <hr> -->
+        <label>Firstname:</label>
+        <input type="text" name="Firsname" required><br>
+        <label>Middlename:</label>
+        <input type="text" name="Middlename"><br>
+        <label>Lastname:</label>
+        <input type="text" name="Lastname" required><br>
+        <label>Address:</label>
+        <textarea size="20"rows=3 cols=20 name="address" placeholder="Enter your address" required></textarea><br>
+        <label>Email-id:</label>
+        <input type="text" name="Email-id" placeholder="abc@gmail.com" required><br>
+        <label>Mobile Number:</label>
+        <input type="text" name="Mo" placeholder="10-digit mobile number" minlength="10" maxlength="10"required><br>
+        <label>Password:</label>
+        <input type="password" name="Password" placeholder="Set strong password" minlength="8" maxlength="12" required><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" required> male
+        <input type="radio" name="gender" value="female"> female
+        <input type="radio" name="gender" value="other"> other<br>
+        <label>Select Place:</label>
+        <select name="Topic" required>
+            <option value="">Select place</option>
+            <option value="Shimla">Shimla</option>
+            <option value="Goa">Goa</option>
+        </select><br>
+        <label>Select People:</label>
+        <select name="Topic2" required>
+            <option value="">Select number of people</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">4</option>
+            <option value="3">5</option>
+            <option value="3">10</option>
+
+        </select><br>
+           <address>Comment on any suggestion</address>
+        <textarea name="comment" rows=10 cols=50 placeholder="Write your comment here"></textarea><br>
+        <button>Reset</button>
+        <button>Submit</button>
+</form>
+<button onclick="submit()">Check booking!</button>
+<p id="demo"></p>
+<footer>
+    <div class="f1">
+        <a href="#" class="link">Home</a>
+        <a href="Shimla.html" class="link">Shimla</a>
+        <a href="Goa.html" class="link">Goa</a>
+        <a href="#" class="link">Offers</a>
+        <a href="Book.html" class="link">Book</a>
+        <a href="About.html" class="link">About</a>
+    </div>
+    <div class="f2">
+        &copy; All copyrights are reserved
+    </div>
+</footer>
+<script>
+    function submit(){
+        document.getElementById("demo").innerHTML="Your booking has been done successfully";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: wheat;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+}
+.menubtn{
+    margin: 10px;
+}
+.brand{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    /* text-align: center; */
+}
+.bookbtn{
+    background-color: blue;
+    color: white;
+    font-size: 13px;
+    margin: 10px 20px;
+    height: 1.5rem;
+    width: 7rem;
+    box-shadow: black;
+}
+.bookbtn > a{
+    color: white;
+    text-decoration: none;
+}
+.img-container{
+    margin: auto;
+    align-items: center;
+}
+.img-container .img1{
+    position: relative;
+    background-image: url('img/hotel1.jpg');
+    background-repeat: no-repeat;
+    max-width:1200px ;
+    height: 1000px;
+    /* height: 500px; */
+    /* padding-left: 100px; */
+}
+.drop:hover{
+    display:block;
+    position:relative;
+}
+.menu-content{
+    background-color: rgb(97, 97, 246);
+    position: absolute;
+    z-index: 1;
+    display:none;
+    font-size:20px;
+}
+.menu-content a{
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+    text-shadow: none;
+}
+.drop:hover .menu-content{
+    display: block;
+}
+.menu-content a:hover{
+    background-color: cornflowerblue;
+    color:white;
+}
+.himg{
+    background-image: url("../img/hotel2.jpg");
+    height: 500px;
+    color: white;
+    font-size: 50px;
+}
+.section1{
+    text-align: center;
+    font-size: 20px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+li > details{
+    font-size: medium;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    bottom: 0;
+}
+.f1{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.fott{
+    position: absolute;
+    bottom: 0;
+}
+hr{
+    height: 5px;
+    background-color: blue;
+}
